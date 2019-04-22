@@ -1,0 +1,74 @@
+parameters:
+  - $ref: "#/components/parameters/resourceId"
+get:
+  tags:
+    - Bank Accounts
+  summary: Retrieve a Bank Account
+  description: |
+    Retrieve a Bank Account with specified identifier string
+  responses:
+    200:
+      description: BankAccount was retrieved successfully
+      headers:
+        Rate-Limit-Limit:
+          $ref: "#/components/headers/Rate-Limit-Limit"
+        Rate-Limit-Remaining:
+          $ref: "#/components/headers/Rate-Limit-Remaining"
+        Rate-Limit-Reset:
+          $ref: "#/components/headers/Rate-Limit-Reset"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/BankAccount"
+    401:
+      $ref: "#/components/responses/AccessForbidden"
+    404:
+      $ref: "#/components/responses/NotFound"
+put:
+  tags:
+    - Bank Accounts
+  summary: Create a BankAccount with predefined ID
+  description: |
+    Create or update a BankAccount with predefined identifier string
+  requestBody:
+    content:
+      application/json:
+        schema:
+          oneOf:
+            - $ref: "#/components/schemas/BankAccountCreateToken"
+            - $ref: "#/components/schemas/BankAccountCreatePlain"
+    description: BankAccount resource
+    required: true
+  responses:
+    200:
+      description: BankAccount was updated
+      headers:
+        Rate-Limit-Limit:
+          $ref: "#/components/headers/Rate-Limit-Limit"
+        Rate-Limit-Remaining:
+          $ref: "#/components/headers/Rate-Limit-Remaining"
+        Rate-Limit-Reset:
+          $ref: "#/components/headers/Rate-Limit-Reset"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/BankAccount"
+    201:
+      description: BankAccount was created
+      headers:
+        Rate-Limit-Limit:
+          $ref: "#/components/headers/Rate-Limit-Limit"
+        Rate-Limit-Remaining:
+          $ref: "#/components/headers/Rate-Limit-Remaining"
+        Rate-Limit-Reset:
+          $ref: "#/components/headers/Rate-Limit-Reset"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/BankAccount"
+    401:
+      $ref: "#/components/responses/AccessForbidden"
+    404:
+      $ref: "#/components/responses/NotFound"
+    422:
+      $ref: "#/components/responses/InvalidDataError"
