@@ -8,6 +8,8 @@ sudo apt-get install curl
 
 cat rvm.sh | bash -s stable
 
+/home/hembad/.profile
+
 rvm install ruby --default
 
 ruby -v
@@ -15,7 +17,7 @@ ruby -v
 gem install bundler
 
 sudo apt-get install nodejs -y
-sudo apt-get install bundler ruby-dev -y
+
 
 bundle install
 
