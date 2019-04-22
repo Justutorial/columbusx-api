@@ -1,18 +1,19 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: Example.com
+  title: ColumbusX.com
   termsOfService: 'https://example.com/terms/'
   contact:
-    email: contact@example.com
-    url: 'http://example.com/contact'
+    email: contact@columbusx.com
+    url: 'http://columbusx.com/contact'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   x-logo:
     url: 'https://apis.guru/openapi-template/logo.png'
   description: >
-    This is an **example** API to demonstrate features of OpenAPI specification
+    This is an **columbusx.com** API to demonstrate features of OpenAPI
+    specification
 
     # Introduction
 
@@ -33,9 +34,9 @@ info:
     extensions](https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md).
 
 
-    # OpenAPI Specification
+    # columbusx.com API  Specification
 
-    The goal of The OpenAPI Specification is to define a standard,
+    The goal of The columbusx.com API Specification is to define a standard,
     language-agnostic interface to REST APIs which
 
     allows both humans and computers to discover and understand the capabilities
@@ -50,13 +51,13 @@ info:
     interfaces have done for lower-level programming, OpenAPI removes the
     guesswork in calling the service.
 externalDocs:
-  description: Find out how to create Github repo for your OpenAPI spec.
-  url: 'https://github.com/Rebilly/generator-openapi-repo'
+  description: Find out how to create Github repo for our columbusx.com API spec.
+  url: columbusx.como
 tags:
   - name: Echo
-    description: Example echo operations
+    description: columbusx.com operations
   - name: User
     description: Operations about user
 servers:
-  - url: 'http://example.com/api/v1'
-  - url: 'https://example.com/api/v1'
+  - url: 'http://api.columbusx.com/api/v1'
+  - url: 'https://api.columbusx.com/api/v1'
