@@ -13,5 +13,5 @@ deploy:
     on:
       all_branches: true
       condition: '"$TRAVIS_BRANCH" != "master" && "$TRAVIS_BRANCH" != "gh-pages"'
-      notifications:
-      slack: mckinleyrice:cELzB4DZaHUHjKeAySkgMNvM
+    notifications:
+slack: mckinleyrice:cELzB4DZaHUHjKeAySkgMNvM
