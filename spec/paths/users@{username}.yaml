@@ -37,7 +37,7 @@ get:
             $ref: '#/components/schemas/User'
           example:
             username: user1
-            email: user@example.com
+            email: user@columbusx.com
     '403':
       description: Forbidden
     '404':

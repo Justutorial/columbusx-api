@@ -1,15 +1,4 @@
 # ColumbusX-API OpenAPI Specification
-[![Build Status](https://travis-ci.com/mckinley-and-rice/columbusx-api.svg?branch=master)](https://travis-ci.com/mckinley-and-rice/columbusx-api)
-## Steps to finish
-
-1. Enable [Travis](https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A) for your repository (**note**: you already have `.travis.yml` file)
-1. [Create GitHub access token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/); select `public_repo` on `Select scopes` section.
-1. Use the token value as a value for [Travis environment variable](https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings) with the name `GH_TOKEN`
-1. Make a test commit to trigger CI: `git commit --allow-empty -m "Test Travis CI" && git push`
-1. Wait until Travis build is finished. You can check progress by clicking on the `Build Status` badge at the top
-1. **[Optional]** You can setup [custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) (just create `web/CNAME` file)
-1. **[Optional]** If your API is public consider adding it into [APIs.guru](https://APIs.guru) directory using [this form](https://apis.guru/add-api/).
-1. Delete this section ❌
 
 ## Links
 
@@ -29,6 +18,17 @@
 
 #### `npm start`
 Starts the development server.
+
+
+
+## Development server started 🎉 :
+
+  ✔ Documentation (ReDoc):      http://localhost:8080
+  ✔ Swagger Editor:             http://localhost:8080/swagger-editor/
+
+Visit http://localhost:8080/swagger-editor/ and edit and commit
+
+
 
 #### `npm run build`
 Bundles the spec and prepares web_deploy folder with static assets.
