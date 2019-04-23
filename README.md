@@ -24,6 +24,7 @@ Starts the development server.
 ## Development server started 🎉 :
 
   ✔ Documentation (ReDoc):      http://localhost:8080
+  
   ✔ Swagger Editor:             http://localhost:8080/swagger-editor/
 
 Visit http://localhost:8080/swagger-editor/ and edit and commit
