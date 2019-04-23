@@ -1,16 +1,16 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: Example.com
-  termsOfService: 'https://example.com/terms/'
+  title: ColumbusX
+  termsOfService: 'https://columbusx.io/terms/'
   contact:
-    email: contact@example.com
-    url: 'http://example.com/contact'
+    email: hello@columbusx.io
+    url: 'http://columbusx.io/contact'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   x-logo:
-    url: 'https://apis.guru/openapi-template/logo.png'
+    url: ./logo.png
   description: |
     This is an **example** API to demonstrate features of OpenAPI specification
     # Introduction
@@ -35,8 +35,10 @@ tags:
   - name: User
     description: Operations about user
 servers:
-  - url: 'http://example.com/api/v1'
-  - url: 'https://example.com/api/v1'
+  - url: 'http://columbusx.io/api/v1'
+  - url: 'https://columbusx.io/api/v1'
+  - url: 'http://columbusx.com/api/v1'
+  - url: 'https://columbusx.com/api/v1'
 paths:
   /echo:
     post:
@@ -148,7 +150,7 @@ paths:
                 $ref: '#/components/schemas/User'
               example:
                 username: user1
-                email: user@example.com
+                email: user@columbusx.com
         '403':
           description: Forbidden
         '404':
@@ -192,7 +194,7 @@ components:
       description: User email address
       type: string
       format: test
-      example: john.smith@example.com
+      example: hemprasad.badgujar@columbusx.com
     User:
       type: object
       properties:
@@ -200,17 +202,17 @@ components:
           description: User supplied username
           type: string
           minLength: 4
-          example: John78
+          example: hemprasad
         firstName:
           description: User first name
           type: string
           minLength: 1
-          example: John
+          example: hemprasad
         lastName:
           description: User last name
           type: string
           minLength: 1
-          example: Smith
+          example: badgujar
         email:
           $ref: '#/components/schemas/Email'
   headers:
@@ -231,7 +233,7 @@ components:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: 'http://example.com/api/oauth/dialog'
+          authorizationUrl: 'http://columbusx.com/api/oauth/dialog'
           scopes:
             'read:users': read users info
             'write:users': modify or remove users
