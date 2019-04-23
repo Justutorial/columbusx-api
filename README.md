@@ -1,5 +1,7 @@
 # ColumbusX-API OpenAPI Specification
 
+[![Build Status](https://travis-ci.org/mckinley-and-rice/columbusx-api.svg?branch=master)](https://travis-ci.org/mckinley-and-rice/columbusx-api.)
+
 ## Links
 
 - [Reference Documentation (ReDoc)](https://mckinley-and-rice.github.io/columbusx-api/)
@@ -24,7 +26,7 @@ Starts the development server.
 ## Development server started 🎉 :
 
   ✔ Documentation (ReDoc):      http://localhost:8080
-  
+
   ✔ Swagger Editor:             http://localhost:8080/swagger-editor/
 
 Visit http://localhost:8080/swagger-editor/ and edit and commit
