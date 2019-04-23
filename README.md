@@ -4,8 +4,7 @@
 
 ## Links
 
-- [Reference Documentation (ReDoc)](https://mckinley-and-rice.github.io/columbusx-api/)
-- [SwaggerUI](https://mckinley-and-rice.github.io/columbusx-api/swagger-ui/)
+- [Reference Documentation (ColumbusX-API)](https://mckinley-and-rice.github.io/columbusx-api/)
 - OpenAPI Raw Files: [JSON](https://mckinley-and-rice.github.io/columbusx-api/openapi.json) [YAML](https://mckinley-and-rice.github.io/columbusx-api/openapi.yaml)
 
 **Warning:** All above links are updated only after Travis CI finishes deployment
